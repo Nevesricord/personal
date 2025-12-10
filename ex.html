@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Marcelo Benitez | Elite Training</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+<style>
+    .hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:url('marcelocampeao.png') center/cover;
+    text-align:center;
+    padding:0 20px
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#121212;color:#f5f5f5;font-family:'Montserrat',sans-serif;overflow-x:hidden}
+
+.navbar{position:fixed;top:0;width:100%;background:rgba(0,0,0,.95);padding:15px 5%;display:flex;justify-content:space-between;align-items:center;z-index:1000;border-bottom:2px solid #D4AF37}
+.nav-logo img{height:50px}
+.nav-links a{color:#fff;text-decoration:none;margin-left:20px;font-size:14px;text-transform:uppercase;font-weight:700;transition:.3s}
+.nav-links a:hover{color:#D4AF37}
+
+.hero{height:100vh;display:flex;align-items:center;justify-content:center;background:url('personal.jpg') center/cover;text-align:center;padding:0 20px}
+.hero-content h1{font-size:3.5rem;text-transform:uppercase;line-height:1.1;margin-bottom:20px;background:-webkit-linear-gradient(#FFD700,#D4AF37);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-content p{font-size:1.2rem;max-width:600px;margin:0 auto 30px}
+
+.btn-gold{background:linear-gradient(45deg,#D4AF37,#FFD700);color:#000;padding:15px 40px;text-decoration:none;font-weight:900;text-transform:uppercase;border-radius:50px;box-shadow:0 0 20px rgba(212,175,55,.4);transition:.3s;display:inline-block}
+.btn-gold:hover{transform:scale(1.05);box-shadow:0 0 30px rgba(212,175,55,.8)}
+
+.section{padding:80px 10%}
+
+.bio-container{display:flex;align-items:center;gap:50px;background:#1E1E1E;padding:40px;border-radius:20px;border:1px solid #333}
+.bio-img img{width:300px;height:400px;object-fit:cover;border-radius:10px;box-shadow:-10px 10px 0 #D4AF37}
+.bio-text h2{font-size:2.5rem;margin-bottom:20px;color:#D4AF37}
+.bio-text p{line-height:1.8;color:#ccc;margin-bottom:20px}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;margin-top:40px}
+.gallery-item img{width:100%;height:300px;object-fit:cover;border-radius:8px;transition:.3s;filter:grayscale(100%)}
+.gallery-item img:hover{filter:none;transform:scale(1.03)}
+
+.testimonial{text-align:center;background:#000;padding:60px 20px;border-top:1px solid #333;border-bottom:1px solid #333}
+audio{width:100%;max-width:600px;margin-top:20px;border-radius:30px}
+
+.pricing-section{text-align:center}
+.pricing-section h2{font-size:3rem;margin-bottom:50px;color:#fff}
+
+.pricing-container{display:flex;justify-content:center;gap:30px;flex-wrap:wrap}
+
+.price-card{background:#1a1a1a;padding:40px;border-radius:15px;width:350px;border:1px solid #333;transition:.3s;position:relative}
+.price-card:hover{border-color:#D4AF37;transform:translateY(-10px)}
+
+.price-card h3{font-size:1.5rem;color:#ccc}
+.price-card .price{font-size:3.5rem;color:#D4AF37;font-weight:900;margin:20px 0}
+
+.price-card ul{list-style:none;text-align:left;margin-bottom:30px}
+.price-card ul li{padding:10px 0;border-bottom:1px solid #333;color:#aaa}
+
+.btn-outline{border:2px solid #D4AF37;color:#D4AF37;padding:12px 30px;text-decoration:none;display:block;font-weight:700;transition:.3s}
+.btn-outline:hover{background:#D4AF37;color:#000}
+
+footer{background:#000;text-align:center;padding:30px;font-size:.8rem;color:#555}
+
+@media(max-width:900px){
+  .bio-container{flex-direction:column;text-align:center}
+  .bio-img img{width:100%;max-width:400px}
+  .nav-links{display:none}
+  .hero-content h1{font-size:2.5rem}
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="nav-logo"><img src="MARCELO-LOGO.png"></div>
+  <div class="nav-links"><a href="#bio">Sobre</a><a href="#resultados">Resultados</a><a href="#planos">Planos</a></div>
+</div>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Marcelo Benitez</h1>
+    <p>Transforme seu corpo com metodologia de atleta e acompanhamento de elite.</p>
+    <a href="#planos" class="btn-gold">COMEÇAR AGORA</a>
+  </div>
+</section>
+
+<section id="bio" class="section">
+  <div class="bio-container">
+    <div class="bio-img"><img src="Marcelo 1.jpg"></div>
+    <div class="bio-text">
+      <h2>O TREINADOR</h2>
+      <p>Marcelo Benitez, 35 anos, é referência em Curitiba com mais de uma década de experiência.</p>
+      <p>Seu método une prática e ciência do treinamento para resultados reais.</p>
+    </div>
+  </div>
+</section>
+
+<section id="resultados" class="section">
+  <h2 style="text-align:center;font-size:2.5rem;margin-bottom:20px">EVOLUÇÃO REAL</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="evolução1.jfif"></div>
+    <div class="gallery-item"><img src="evolução 2.jfif"></div>
+    <div class="gallery-item"><img src="Evolução 3.webp"></div>
+    <div class="gallery-item"><img src="evolução 4.png"></div>
+  </div>
+</section>
+
+<section class="testimonial">
+  <h3 style="color:#D4AF37;margin-bottom:15px;font-size:1.5rem">O QUE DIZEM MEUS ALUNOS</h3>
+  <p style="color:#aaa">"Resultado consistente e suporte incrível"</p>
+  <audio controls><source src="depoimento.wav" type="audio/wav"></audio>
+</section>
+
+<section id="planos" class="section pricing-section">
+  <h2>INVESTIMENTO</h2>
+  <div class="pricing-container">
+
+    <div class="price-card">
+      <h3>CONSULTORIA ONLINE</h3>
+      <div class="price">R$ 100</div>
+      <ul>
+        <li>Treinos via WhatsApp</li><li>Ajustes Semanais</li><li>Suporte Direto</li><li>Dicas Exclusivas</li>
+      </ul>
+      <a href="#" class="btn-outline">CONTRATAR</a>
+    </div>
+
+    <div class="price-card" style="border-color:#D4AF37">
+      <div style="position:absolute;top:-15px;left:50%;transform:translate(-50%);background:#D4AF37;color:#000;padding:5px 15px;font-weight:700;font-size:.8rem">PRESENCIAL</div>
+      <h3>AULA INDIVIDUAL</h3>
+      <div class="price">R$ 50</div>
+      <ul>
+        <li>Treino Presencial</li><li>Correção de Movimento</li><li>Plano Alimentar Básico</li><li>Motivação Total</li>
+      </ul>
+      <a href="#" class="btn-gold" style="display:block;text-align:center;box-shadow:none">AGENDAR</a>
+    </div>
+
+  </div>
+</section>
+
+<footer><p>&copy; 2024 MARCELO BENITEZ PERSONAL TRAINER</p></footer>
+
+</body>
+</html>
